@@ -21,6 +21,21 @@ let d = (a == b);
 let e = a != b;
 alert(e);
 
-// Crie as variáveis a(valor = 1), b(valor = 2) e exiba no console.log i resultado de:
-// a>=b; a<=b; a!=b; a == b. 
+// Crie as variáveis f(valor = 1), g(valor = 2) e exiba no console.log i resultado de:
+// f>=g; f<=g; f!=g; f == g. 
 
+let f = 1;
+let g = 2;
+let h;
+
+h = f >= g;
+console.log(h);
+
+h = f <= g;
+console.log(h);
+
+h = f != g;
+console.log(h);
+
+h = f == g;
+console.log(h);
