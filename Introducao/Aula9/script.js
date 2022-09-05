@@ -24,3 +24,11 @@ while(colidindo){
 } 
 
 Crie um loop para somar todos os números de 0 a 100. */
+
+/* let total = 0;
+let contador = 1;
+
+while(contador < 100){
+    total =total + contador;
+    contador++;
+} */
