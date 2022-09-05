@@ -21,4 +21,6 @@ while(colidindo){
     if(vidas == 0){
         break;
     }
-} */
+} 
+
+Crie um loop para somar todos os números de 0 a 100. */
