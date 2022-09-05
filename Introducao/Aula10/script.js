@@ -39,3 +39,12 @@ console.log(moedas);
 
 /* Um determinado computador antigo consegue armazenar números até o 9999, sua missão é criar um loop infinito que soma número de 1 em 1, e criar uma condição que interrompa o ciclo caso o número chegue a 9999. */
 
+let total = 0;
+
+while(true){
+    total++;
+    if(total ==9999){
+        break;
+    }
+}
+console.log(total);
