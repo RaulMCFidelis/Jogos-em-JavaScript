@@ -83,4 +83,15 @@ function jogo(){
     while(snake.length > tam){
         snake.shift();
     }
+
+    //Configurando a comida
+    ctx.fillStyle = "#F1C40F";
+    ctx.fillRect(foodX*grid, foodY*grid, grid-1, grid-1);
+
+    //Comendo a comida
+    if(positionX == foodX && positionY == foodY){
+        tam++;
+        foodX = Math.floor(Math.random()*grid);
+        foodY = Math.floor(Math.random()*grid);
+    }
 }
