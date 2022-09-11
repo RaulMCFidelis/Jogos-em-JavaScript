@@ -68,6 +68,14 @@ function jogo(){
                 Math.random()*4000 = valor pseudo-aleatório entre 0 e 4000 */     
             })
         }
+        //Pássaro entre as bordas do cano
+        if(bX + bird.width >= cano[i].x && bX <= cano[i].x + canocima.width
+            // Pássaro colidiu com o cano de cima OU com o cano de baixo
+            && (bY <= cano[i].y + canocima.height || bY + bird.height >= cano[i].y + constant)
+            //Pássaro colidiu com o chão 
+            || bY + bird.height >= canvas.height - chao.height){
+            location.reload();
+            }
 
     }
 
