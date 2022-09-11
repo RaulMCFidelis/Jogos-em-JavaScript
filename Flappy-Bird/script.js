@@ -3,15 +3,15 @@ var ctx = canvas.getContext("2d");
 
 // Carregando imagens
 var bird = new Image();
-bird.src = "images/bird.png"
+bird.src = 'images/bird.png'
 var bg = new Image();
-bg.src = "images/bg.png"
+bg.src = 'images/bg.png'
 var chao = new Image();
-chao.src = "images/chao.png"
+chao.src = 'images/chao.png'
 var canocima = new Image();
-canocima.src = "images/canocima.png"
+canocima.src = 'images/canocima.png'
 var canobaixo = new Image();
-canobaixo = "images/canobaixo.png"
+canobaixo = 'images/canobaixo.png'
 
 // Variáveis
 var eec = 100;
@@ -29,9 +29,9 @@ cano[0] = {
 
 //Carregando sons
 var fly = new Audio();
-fly.src = "sounds/fly.mp3"
+fly.src = 'sounds/fly.mp3'
 var scor = new Audio();
-scor.src = "sounds/score.mp3"
+scor.src = 'sounds/score.mp3'
 
     //Captura de tecla
     document.addEventListener("keydown", voa);
