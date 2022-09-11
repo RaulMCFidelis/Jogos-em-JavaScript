@@ -47,6 +47,30 @@ function jogo(){
     ctx.drawImage(bg,0,0);
     //drawImage(imgem, X, Y)
 
+    //Criando canos
+    for(let i = 0; i < cano.length; i++){
+        //Posição do cano de baixo
+        constant = canocima.height + eec;
+        // Configurar o cano de cima
+        ctx.drawImage(canocima, cano[i].x, cano[i].y);
+        //Configurando o cano de baixo
+        ctx.drawImage(canobaixo, cano[i].x, cano[i].y + constant);
+        //Movimentação do cano
+        cano[i].x = cano[i].x - 1
+        if(cano[i].x == 125){
+            cano.push({
+                x : canvas.clientWidth,
+                y : Math.floor(Math.random()*canocima.height)-canocima.height
+                /* Math.floor(x) retorna o menor número inteiro dentre os parâmetros.
+                Math.floor(45,95) -> 45
+
+                Math.random() retorna um número pseudo-aleatório no intervalo [0,1)
+                Math.random()*4000 = valor pseudo-aleatório entre 0 e 4000 */     
+            })
+        }
+
+    }
+
     // desenhando o chão
     ctx.drawImage(chao,0,canvas.height - chao.height);
 
