@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
        
     ]
-
+    //Misturar os cards
     cardArray.sort(() => 0.5 - Math.random())
 
     const grid = document.querySelector('.grid')
